@@ -5,46 +5,55 @@ p {
 }
 /* page background colour*/
 body {
-    background-color: #c49c4d;
+    background-color: white;
+    margin: 0;
 }
 
 /* background for the top navigation */
 .top-nav-bar {
     display: flex;
     justify-content: flex-end;
+    align-content: space-between;
     background-color: black;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /* styling the links inside the navigation bar*/
 .top-nav-bar a {
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
+    font-family: monospace;
 }
-
-button{
-    display: block;
-    margin: auto;
-    width: 10%;
-}
-
-table, th, td{
-    border: 1px solid white;
+/* author name on the left hand side in progress*/
+.author-name {
+    text-align: center;
     color: white;
-    margin: auto;
+    font-family: monospace;
+    font-size: 17px;
+    align-self: center;
 }
 
-.loader {
-    width: 120px;
-  height: 20px;
-  background:
-   linear-gradient(#000 0 0) 0/0% no-repeat
-   #ddd;
-  animation: l1 2s infinite linear;
+.top-nav-bar a:hover {
+    color: #c49c4d
 }
-@keyframes l1 {
-    100% {background-size:100%}
+
+.first-page-content {
+    display: flex;
+    align-items:center;
+    background-color:#c49c4d;
+    padding: 100px 30px;
+    
+}
+
+.welcome-message p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #e9ce98ff;
+    padding: 100px 30px;
+    font-family: 'Courier';
 }
