@@ -7,6 +7,7 @@ p {
 body {
     background-color: white;
     margin: 0;
+    font-family: 'courier';
 }
 
 /* background for the top navigation */
@@ -15,8 +16,10 @@ body {
     justify-content: flex-end;
     align-content: space-between;
     background-color: black;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    width: 100%
 }
 
 /* styling the links inside the navigation bar*/
@@ -35,6 +38,8 @@ body {
     font-family: monospace;
     font-size: 17px;
     align-self: center;
+    margin-left: 20px;
+    margin-right: auto;
 }
 
 .top-nav-bar a:hover {
@@ -45,7 +50,7 @@ body {
     display: flex;
     align-items:center;
     background-color:#c49c4d;
-    padding: 100px 30px;
+    padding: 100px 100px;
     
 }
 
@@ -54,6 +59,45 @@ body {
     justify-content: center;
     align-content: center;
     background-color: #e9ce98ff;
-    padding: 100px 30px;
+    padding: 100px 15px;
     font-family: 'Courier';
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    background-color: black;
+    padding: 14px 20px;
+}
+
+.first-page-aboutme {
+    display:flex;
+    background-color: white;
+    padding: 100px 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-page-projects {
+    padding: 100px 30px
+}
+
+.first-page-resume {
+    display:flex;
+    background-color: #323232;
+    padding:100px 30px;
+}
+
+.first-page-resume p{
+    color: white;
+}
+
+.first-page-contact  {
+    display:flex;
+    background-color: #c49c4d;
+    padding:100px 30px;
+}
+
+.footer p {
+    color: white;
 }
