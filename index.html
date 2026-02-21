@@ -9,41 +9,48 @@
         <link href="stylesheet.css" rel="stylesheet"/>
         <title> Portfolio html draft</title>
     </head>
-    <header>
-        <div class="top-nav-bar">
-            <div class="author-name">Keithlin Lapuz</div>
-            <a class="active" href="#Home">Home</a>
-            <a href="#aboutme">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#Resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </header>
 
     <body>
-        <div class="first-page-content">
+        <header>
+            <div class="top-nav-bar">
+                <div class="author-name">Keithlin Lapuz</div>
+                <a href="#first-page-content" class="nav-bar-link">Home</a>
+                <a href="#first-page-aboutme" class="nav-bar-link">About Me</a>
+                <a href="#first-page-projects" class="nav-bar-link">Projects</a>
+                <a href="#first-page-resume" class="nav-bar-link">Resume</a>
+                <a href="#first-page-contact" class="nav-bar-link">Contact</a>
+            </div>
+        </header>
+
+        <div id="first-page-content">
             <div class="Profile-Box">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541" alt="placeholder">
             </div>
             <div class="welcome-message">
-                <p> Welcome to my Portfolio page, have a look through my project over the years.</p>
+                <h3>Welcome to my Portfolio page! I am Keithlin Lapuz</h3>
+                <p>Have a look through my project over the years.</p>
             </div>
         </div>
-        <div class="first-page-aboutme">
-            <p> about me </p>
+        <div id="first-page-aboutme">
+            <h1> About Me</h1>
+            <div class="description-aboutme">Coding Languages Proficient In</div>
+            <div class="css-logo"></div>
         </div>
 
-        <div class="first-page-projects">
+        <div id="first-page-projects">
             <p> project gallery place holder</p>
         </div>
 
-        <div class="first-page-resume">
+        <div id="first-page-resume">
             <p>resume placeholder</p>
         </div>
 
-        <div class="first-page-contact">
+        <div id="first-page-contact">
             <p> contact placeholder</p>
         </div>
+        <script src="navbar_undeline.js"></script>
+    </body>
+
     <footer>
         <div class="footer">
             <p> Contact: lapuzkeithlin gmail placeholder</p>

@@ -19,7 +19,8 @@ body {
     margin: 0px;
     padding: 0px;
     position: fixed;
-    width: 100%
+    width: 100%;
+    z-index: 1000;
 }
 
 /* styling the links inside the navigation bar*/
@@ -30,6 +31,22 @@ body {
     text-decoration: none;
     font-size: 17px;
     font-family: monospace;
+    position: relative;
+}
+
+.top-nav-bar a::after{
+    content:"";
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #c49c4d;
+    transition: width 0.3s ease;
+}
+
+.top-nav-bar a.active::after{
+    width:100%;
 }
 /* author name on the left hand side in progress*/
 .author-name {
@@ -46,12 +63,14 @@ body {
     color: #c49c4d
 }
 
-.first-page-content {
+#first-page-content {
     display: flex;
     align-items:center;
-    background-color:#c49c4d;
+    background-image: url(https://i.pinimg.com/originals/81/34/08/81340844a99a35cc7993166cbd9b5866.gif);
+    background-size: cover;
+    height: 100vh;
     padding: 100px 100px;
-    
+    margin: 0;
 }
 
 .welcome-message p{
@@ -63,6 +82,11 @@ body {
     font-family: 'Courier';
 }
 
+.welcome-message h3{
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
 .footer {
     display:flex;
     justify-content: center;
@@ -70,7 +94,7 @@ body {
     padding: 14px 20px;
 }
 
-.first-page-aboutme {
+#first-page-aboutme {
     display:flex;
     background-color: white;
     padding: 100px 30px;
@@ -78,21 +102,21 @@ body {
     flex-direction: column;
 }
 
-.first-page-projects {
-    padding: 100px 30px
+#first-page-projects {
+    padding: 500px 30px;
 }
 
-.first-page-resume {
+#first-page-resume {
     display:flex;
     background-color: #323232;
     padding:100px 30px;
 }
 
-.first-page-resume p{
+#first-page-resume p{
     color: white;
 }
 
-.first-page-contact  {
+#first-page-contact  {
     display:flex;
     background-color: #c49c4d;
     padding:100px 30px;
@@ -101,3 +125,8 @@ body {
 .footer p {
     color: white;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
